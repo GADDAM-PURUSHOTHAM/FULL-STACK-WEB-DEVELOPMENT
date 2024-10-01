@@ -1,0 +1,64 @@
+
+<html>
+<head>
+<script language="javascript">
+function checkEmail()
+{
+    
+var regExpr=/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/;
+var emailVal=document.form1.email.value;
+if(!(emailVal.match(regExpr)))
+alert("Enter valid email id");
+}
+
+function copyAddress()
+{
+if(document.form1.chkAddr.checked){
+document.form1.permanentAddr.value=document.form1.presentAddr.value;
+
+}
+else
+document.form1.permanentAddr.value="";
+}
+
+function showPwd()
+{
+var p=document.getElementById("pwd");
+if(p.type==="password")
+p.type="text";
+else
+p.type="password";
+}
+
+function f2()
+{
+document.getElementById("chkAddr").checked=false;
+}
+
+function verifyDetails()
+{
+if(document.form1.email.value=="")
+alert("Enter email id");
+else if(document.form1.presentAddr.value=="")
+alert("Enter present address");
+else if(document.form1.permanentAddr.value=="")
+alert("Enter Permanent Address");
+else
+document.form1.submit();
+}
+</script>
+</head>
+<body><center><form name="form1" method="get" action="1.jsp">
+<input type=text name=email id=email onChange="checkEmail()" placeholder="Enter email id"><br>
+<input type=password name="pwd" id="pwd" placeholder="Enter Password"><input type="button" onClick="showPwd()" value="Show/Hide Pwd"><br>
+<textarea rows=5 cols=25 name="presentAddr" id="presentAddr" onChange="f2()"></textarea><br>
+<input type=checkbox name="chkAddr" id="chkAddr" onChange="copyAddress()"> Permanent Address is same as Present Address<br>
+<textarea rows=5 cols=25 name="permanentAddr" id="permanentAddr"></textarea><br>
+<input type=button onClick="verifyDetails()" value="Submit">
+</form>
+</center>
+</body>
+</html>
+
+
+

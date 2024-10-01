@@ -1,0 +1,22 @@
+<html><head>
+<script language="javascript">
+function f1()
+{
+document.getElementById("myText").type="text"
+}
+function f2()
+{
+document.getElementById("myText").type="hidden";
+}
+</script>
+</head><body>
+Primary Skill:<select id="menu" name="menu" onChange="if(this.selectedIndex==4) {f1()} else {f2()}">
+<option>Singing</option>
+<option>Dancing</option>
+<option>Painting</option>
+<option>Marshal Arts</option>
+<option>Others</option>
+<input type=hidden name="myText" id="myText" placeholder="specify skill">
+</select>
+</body>
+</html>
