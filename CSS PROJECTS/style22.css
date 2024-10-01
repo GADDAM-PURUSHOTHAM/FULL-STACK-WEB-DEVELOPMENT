@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.container{
+    max-width: 900px;
+    
+    margin:0 auto;
+}
+.formhead{
+    background-color: azure;
+    max-width: 680px;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 3px 5px rgba(1, 1,1, 0.1);
+
+}
+/*.form1,label{
+    font-size: 32px;
+
+
+}
+.form1,sname{
+    font-size: 32px;
+
+}
+*/
+.title{
+    font-size: 20px;
+}
+#rf{
+    text-align: center;
+    color:rgb(33,44,55);
+}
+
+form{
+    font-size: 50px;
+    display: flex;
+    flex-direction:column;
+}
+input{
+    font-size: 40px;
+}
+
+div{
+    margin-top: 10px;
+}
+#select{
+    font-size: 40px;
+}
+#texta{
+    font-size: 40px;
+}
+.checkbox{
+    font-size:50px;
+}
