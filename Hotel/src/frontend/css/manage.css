@@ -1,0 +1,69 @@
+.room-management {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.room-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.room-item input,
+.room-item select {
+  padding: 8px;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.room-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and fits nicely */
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.add-btn {
+  background-color: blue;
+  color: white;
+}
+
+.back-btn {
+  background-color: red;
+  color: white;
+}
+
+.img-display {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  object-fit: cover; /* Ensures the image fully displays within its container */
+}

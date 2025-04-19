@@ -1,0 +1,43 @@
+/* Admin Dashboard Container */
+.admin-dashboard {
+    margin-top: 50px;
+  }
+  
+  /* Card Styling */
+  .admin-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effects on Cards */
+  .admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Titles */
+  .admin-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Card Text */
+  .admin-card .card-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .admin-card .btn {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .admin-card .btn:hover {
+    background-color: #0056b3;
+  }
+  
