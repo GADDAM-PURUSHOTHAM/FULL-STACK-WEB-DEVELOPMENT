@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body{
+            background-color:lightpink;
+        }
+        h1{
+            background-color: #123456;
+            color:lightcyan;
+        }
+        .outter{
+            width:150px;
+            height: 350px;
+            border:3px solid black;
+            margin:5px;
+            display: center;
+            background-color:silver;
+
+        }
+        #red{
+            height:100px;
+            width:100px;
+            margin:10px 0px 5px 20px;
+            border:2px solid black;
+            border-radius: 50%;
+            background-color: black;
+            
+        }
+        #yellow{
+            height:100px;
+            width:100px;
+            margin:3px 0px 5px 20px;
+            border:2px solid black;
+            border-radius: 50%;
+            background-color: black;
+            
+        }
+        #green{
+            height:100px;
+            width:100px;
+            margin:3px 0px 5px 20px;
+            border:2px solid black;
+            border-radius: 50%;
+            background-color: black;
+            
+        }
+
+        button{
+            border-style:solid;
+            background-color: lightblue;
+            font-size: 32px;
+
+        }
+        #print{
+            background-color: green;
+        }
+        #close{
+            background-color: red;
+        }
+       
+
+    </style>
+    <script language="javascript">
+        function f1(value)
+        {
+            
+            if(value=="stop")
+            {
+                document.getElementById("red").style.background="red";
+                document.getElementById("yellow").style.background="black";
+                document.getElementById("green").style.background="black";
+            }
+            else if(value=="ready")
+            {
+                document.getElementById("red").style.background="black";
+                document.getElementById("yellow").style.background="yellow";
+                document.getElementById("green").style.background="black";
+            }
+            else if(value=="start")
+            {
+                document.getElementById("red").style.background="black";
+                document.getElementById("yellow").style.background="black";
+                document.getElementById("green").style.background="green";
+            }
+            else if(value=="reset")
+            {
+                document.getElementById("red").style.background="black";
+                document.getElementById("yellow").style.background="black";
+                document.getElementById("green").style.background="black";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Traffic Signals</h1>
+    <br><br>
+    
+        <div class="outter">
+        
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+       
+        </div>
+        <br><br>
+        <button id="stop" onclick="f1('stop')">stop</button>
+        <button id="ready" onclick="f1('ready')">ready</button>
+        <button id="start" onclick="f1('start')">start</button>
+        <button id="reset" onclick="f1('reset')">reset</button>
+        <br><br>
+        <button id="print" onclick="window.print()">print</button>
+        <button id="close" onclick="window.close()">close</button>
+    
+</body>
+</html>

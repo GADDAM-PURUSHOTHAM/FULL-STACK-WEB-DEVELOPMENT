@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Home page</title>
+</head>
+<body background="/home/user/Downloads/i.jpeg">
+
+		<form name="frmDataEntry" action="tables.html" method="post">
+		<h1>Data Entry Form</h1>
+		<p>User Name:</p>
+		<input  type="text" name="txtUserName" id="txtUserName" value="" placeholder="Enter your name" maxlength="15"/ ><br>
+		<p>Password:</p>
+		<input type="password" name="pwdUser" id="pwdUser" value="" placeholder="Enter your password"/><br>
+		<p>ConfirmPassword:</p>
+		<input type="password" name="pwdConfirm" id="pwdConfirm" value="" placeholder="Enter your comfirm password"/><br>
+		<p>Gender:</p>
+		<input type="radio" name="rdbGender" id="rdbGender" value="m"  checked/>Male
+		 <input  type="radio" name="rdbGender" id="rdbGender" value="f"/>Female<br>
+		 <p>Are you physically challenged:</p>
+		<input type="radio" name="rdbQ" id="rdbQ" value="yes"  />YES
+		 <input  type="radio" name="rdbQ" id="rdbQ" value="no" checked/>NO<br>
+		 <p>Software Skills:</P>
+		 <input type="checkbox" name="chkss" id="chkss" value="C"/>C 
+		 <input type="checkbox" name="chkss" id="chkss" value="C++"/>C++
+		 <input type="checkbox" name="chkss" id="chkss" value="Java"/>Java
+		 <input type="checkbox" name="chkss" id="chkss" value="HTML"/>HTML
+		 <input type="checkbox" name="chkss" id="chkss" value="CSS"/>CSS
+		 <input type="checkbox" name="chkss" id="chkss" value="Java Script"/>Java Script<br>
+		 <p>Qualification:</p>
+		 <select name="slctQualification">
+		 		<option value="ssc">SSC(10)</option>
+		 		<option value="inter">INTERMEDIATE(12)</option>
+		 		<option value="btech">BTECH(16)</option>
+		 		
+		 		
+		 </select>
+		 <br>
+		 <p>Address</p>
+		 <textarea name="txtAddress" rows="3" cols="15" wrap="physical"></textarea>
+		 
+		<br>
+		
+		<input type="submit" value="SUBMIT" />
+		<input type="reset" value="RESET" />
+		</form>
+	
+	</body>
+</html>

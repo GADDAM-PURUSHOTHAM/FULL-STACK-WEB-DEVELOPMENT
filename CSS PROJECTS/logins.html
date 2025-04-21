@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logins</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .outer{
+            width:100%;
+            height: 1000px;
+            background-color: purple;
+            padding:300px;
+            padding-left: 500px;
+            
+        }
+
+        .inner{
+            background-color: white;
+            padding-top: 0px;
+            width: 750px;
+            height: 500px;
+            font-size: 32px;
+            padding-left: 150px;
+            
+            
+        }
+        .head{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        label{
+            margin-top: 20px;
+        }
+        .inner:hover{
+            box-shadow:20px whitesmoke;
+        }
+        input{
+            margin-top: 20px;
+            font-size: 22px;
+            border-radius: 3px;
+        }
+        .but{
+            background-color: chartreuse;
+           width: 200px;
+           color: navy;
+        }
+        .but:hover{
+           border: 2px solid white;
+           
+        }
+    </style>
+</head>
+<body>
+    <form name="form1" action="check.jsp" method="post">
+    <div class="outer">
+        
+        <div class="inner">
+            <header class="head">Login Page<header>
+            <label for="sname">User Name:</label><br>
+            <input type="text" class="text1" name="username" id="username" placeholder="Enter the user name">
+            <br><br>
+            <label for="pass">Password:</label>
+            <br>
+            <input type="password" class="text2" name="password1" id="password1" placeholder="Enter the password">
+
+            <br><br>
+            <input type="button" class="but" value="Login" >
+
+        </form>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

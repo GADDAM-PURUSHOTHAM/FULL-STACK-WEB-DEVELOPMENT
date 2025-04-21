@@ -1,0 +1,104 @@
+html,body{
+    height: 100%;
+    font-size: 16px;
+    margin:0px;
+    font-family:"Lato",sans-serif;
+    line-height:1.8em;
+    
+
+}
+.img1{
+   background-image: url("file:///home/user/Downloads/AdobeStock_547769490_Preview(1).jpeg");
+    min-height: 100%;
+   
+}
+.img2{
+    background-image: url("file:///home/user/Downloads/AdobeStock_583547761_Preview.jpeg");
+     min-height: 400px;
+    
+ }
+ .img3{
+    background-image: url("file:///home/user/Downloads/AdobeStock_547769490_Preview(1).jpeg");
+     min-height: 400px;
+    
+ }
+.img1,.img2,.img3{
+    position:relative;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+}
+.ptext{
+   color:black;
+
+    position: absolute;
+    color:aliceblue;
+    top:50%;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    width:100%;
+    
+    
+}
+.text1{
+    background-color: #666;
+    color:#fff;
+    padding: 20px;
+}
+.sec{
+    
+    text-align: center;
+
+}
+.ptext2{
+    color:black;
+ 
+     position: absolute;
+     color:lightslategray;
+     top:50%;
+ 
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 32px;
+     width:100%;
+     
+     
+ }
+ .text2{
+    background-color: #666;
+    color:#fff;
+    padding: 20px;
+}
+
+.sec2{
+    text-align:center;
+    background-color: lightslategray;
+    color:#fff;
+}
+.ptext3{
+    color:black;
+ 
+     position: absolute;
+     color:lightslategray;
+     top:50%;
+ 
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 32px;
+     width:100%;
+     
+     
+ }
+ .text3{
+    background-color: #666;
+    color:#fff;
+    padding: 20px;
+}
+.sec3{
+    text-align: center;
+    background-color: aquamarine;
+    color: #666;
+}
